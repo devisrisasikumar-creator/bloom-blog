@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fff7fb, #ffeef5);
+  min-height: 100vh;
+  color: #5c4b51;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  z-index: -1;
+  opacity: 0.16;
+  pointer-events: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+}
+
+body::before {
+  top: -40px;
+  left: -40px;
+  background-image: url('https://i.pinimg.com/736x/3a/4d/93/3a4d9337370dedb8bdc3f178a1af5467.jpg');
+  border-radius: 50%;
+}
+
+body::after {
+  bottom: -40px;
+  right: -40px;
+  transform: rotate(180deg);
+  background-image: url('https://i.pinimg.com/736x/3a/4d/93/3a4d9337370dedb8bdc3f178a1af5467.jpg');
+  border-radius: 50%;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #d4819a;
+  font-size: 48px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 8px rgba(255, 182, 193, 0.4);
+}
+
+h2 {
+  color: #b86b85;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  margin: 25px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a35d74;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #ffd6e7;
+  color: #c75c82;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  max-width: 430px;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(240, 170, 190, 0.25);
+  border: 1px solid #ffe0eb;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #f7c8d8;
+  border-radius: 14px;
+  background: #fffafd;
+  font-size: 15px;
+  outline: none;
+  margin-top: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #f48fb1;
+  box-shadow: 0 0 8px rgba(244, 143, 177, 0.3);
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  background: linear-gradient(to right, #f8a5c2, #fbc2d4);
+  color: white;
+  border: none;
+  padding: 13px 22px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #f78fb3, #f8a5c2);
+}
+
+.post-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 22px;
+  border-radius: 22px;
+  margin: 20px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 18px rgba(240, 170, 190, 0.2);
+  border: 1px solid #ffe0eb;
+  position: relative;
+}
+
+.post-card::before {
+  content: "🌸";
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  font-size: 24px;
+}
+
+.post-card h3 {
+  color: #c75c82;
+}
+
+.post-card p {
+  color: #6e5a61;
+  line-height: 1.7;
+}
+
+.flower {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8bbd0;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f5;
+}
